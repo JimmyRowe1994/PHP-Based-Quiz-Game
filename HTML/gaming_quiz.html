@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gaming Quiz</title>
+	<link rel = "icon" type = "image/ico" href = "../../../Profile_Page/Assets/Images/Profile.ico">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:600,700,800" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel = "stylesheet" href = "../CSS/gaming_quiz.css">
+</head>
+<body>
+	<div id = "panel">
+		<div id = "topSection">
+			<div id = "questionNumberDisplay">
+				<p id = "questionNumber">Q0</p>
+			</div>
+			<div id = "question">
+				The Video Game Quiz
+			</div>
+			<div id = "timer">
+				<p><i id = timerIcon class="far fa-clock"></i></p>
+				<span id = "totalTimer"><span id = "timerMinute">00</span>:<span id = "timerSecond">00</span></span>
+			</div>
+		</div>
+		<div id = "bottomSection">
+			<div id = "startScreen" class = "bottomDisplay">
+				<div class = "row">
+					<div class = "col">
+						<div id = "leaderboards">
+							<h5 class = "leaderboardTitle">Easy Leaderboard</h5>
+							<div id = "easyLeaderboard">
+								<p class = "easyLeaderboardRanking">No Player Data</p>
+								<p class = "easyLeaderboardRanking">No Player Data</p>
+								<p class = "easyLeaderboardRanking">No Player Data</p>
+							</div>
+							<hr>
+							<h5 class = "leaderboardTitle">Hard Leaderboard</h5>
+							<div id = "hardLeaderboard">
+								<p class = "hardLeaderboardRanking">No Player Data</p>
+								<p class = "hardLeaderboardRanking">No Player Data</p>
+								<p class = "hardLeaderboardRanking">No Player Data</p>
+							</div>
+						</div>
+					</div>
+					<div class = "col">
+						<h5 class = "leaderboardTitle">Username</h5>
+						<input id = "nameInput" type = "text" placeholder = "Name" maxlength="10">
+						<hr>
+						<h5 class = "leaderboardTitle">Difficulty</h5>
+						<div class = "row">
+							<div class = "col diffButtonsPanel">
+								<button id = "easyButton" class = "diffButtons">Easy</button>
+								<p>(25 questions)</p>
+							</div>
+							<div class = "col diffButtonsPanel">
+								<button id = "hardButton" class = "diffButtons">Hard</button>
+								<p>(50 questions)</p>
+							</div>
+						</div>
+						<hr>
+						<button id = "startButton" class = "nextButton">Begin Game</button>
+					</div>
+				</div>
+			</div>
+			<div id = "answerDisplay" class = "hidden">
+				<p id = "answerOne" class = "answer">Answer One</p>
+				<p id = "answerTwo" class = "answer">Answer Two</p>
+				<p id = "answerThree" class = "answer">Answer Three</p>
+				<p id = "answerFour" class = "answer">Answer Four</p>
+				<button id = "submitButton" class = "nextButton">Next Question <i class="fas fa-arrow-right"></i></button>
+			</div>
+			<div id = "endScreen" class = "hidden">
+				<div class = "container">
+					<h3>You answered <sup id = "correctTally">X</sup>/<sub id = "amountOfQuestions">X</sub> questions correctly in <span id = "endMinute">XX</span>:<span id = "endSecond">XX</span>.</h3>
+					<h1>You scored <span id = "points">XXX</span> points!</h1>
+					<div class = "row">
+						<div class = "col-6">
+							<button id = "uploadScoreButton">Upload Score</button>
+						</div>
+						<div class = "col-6">
+							<button id = "retryButton">Retry</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src = "../JS/script.js"></script>
+</body>
+</html>
